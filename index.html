@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="Contact">
+        <h1 id="ContactText">Напиши сообщение!</h1>
+        <label class="Name-Input">
+            <input maxlength=37 minlength="2" id="NameInput" type="text" required/>
+            <span class="placeholder">имечко</span>
+        </label>
+        <label class="Name-Input">
+            <input minlength="2" id="ImgInput" type="text" required/>
+            <span class="placeholder">картиночка</span>
+        </label>
+        <textarea maxlength ="2000" id="InputField" placeholder="Напиши че нибудь"></textarea>
+        <button onclick="send()" id="SendMessage">Отправить</button>
+        <h3 id="MessageSent">Message sent!</h3>
+        <h3 id="MessageFailed">Message failed!</h3>
+    </div>
+</body>
+</html>
